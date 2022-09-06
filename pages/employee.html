@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Employee</title>
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/colors/green.css">
+        <link rel="stylesheet" href="../lib/combobox/css/combobox.css">
+        <link rel="stylesheet" href="../lib/inputDate/css/date.css">
+        <link rel="stylesheet" href="../css/page/employee.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="header-left">
+                <div class="header-icon"></div>
+                <div class="header-logo"></div>
+            </div>
+            <div class="header-right">
+                <div class="header-select">
+                    <div class="header-select-icon"></div>
+                    <div class="header-select-text">
+                        CÔNG TY TNHH SẢN XUẤT - THUONG MẠI - DỊCH VỤ QUI PHÚC
+                    </div>
+                    <div class="header-select-icon-down">
+                    </div>
+                </div>
+
+                <div class="header-icloud">
+                    <div class="header-notification"></div>
+                    <button class="header-img-info"></button>
+                    <div class="header-text-name">Thái Bình An</div>
+                    <div class="header-name-down"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="navbar">
+                <div class="navbar-item">
+                    <div class="item-icon icon-1"></div>
+                    <div class="item-text">Tổng quan</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-2"></div>
+                    <div class="item-text">Tiền mặt</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-3"></div>
+                    <div class="item-text">Tiền gửi</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-4"></div>
+                    <div class="item-text">Mua hàng</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-5"></div>
+                    <div class="item-text">Bán Hàng</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-6"></div>
+                    <div class="item-text">Quản lý hóa đơn</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-7"></div>
+                    <div class="item-text">Kho</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-8"></div>
+                    <div class="item-text">Công cụ sử dụng</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-9"></div>
+                    <div class="item-text">Tài sản cố định</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-10"></div>
+                    <div class="item-text">Thuế</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-11"></div>
+                    <div class="item-text">Gía Thành</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-12"></div>
+                    <div class="item-text">Tổng hợp</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-13"></div>
+                    <div class="item-text">Ngân sách</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-14"></div>
+                    <div class="item-text">Báo cáo</div>
+                </div>
+                <div class="navbar-item">
+                    <div class="item-icon icon-15"></div>
+                    <div class="item-text">Phân tích tài chính</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-title">
+                    <div class="title-name">NHÂN VIÊN</div>
+                    <div class="title-btn">
+                        <button class="btn" id="addEmployee">Thêm mới nhân viên</button>
+                    </div>
+                </div>
+                <div class="content-main">
+                    <div class="content__function">
+                        <div class="content_search input-search">
+                            <input type="text" class="input input-search-forcus"  placeholder="tìm theo mã, tên nhân viên">
+                            <div class="input-icon"></div>
+                        </div>
+                        <div class="content__load"></div>
+                    </div>
+
+                    <div class="content__table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="text-center" style="width:50px;"><input type="checkbox" class="checkbox-input"></th>
+                                    <th class="text-left" style="width:150px;">MÃ NHÂN VIÊN</th>
+                                    <th class="text-left">TÊN NHÂN VIÊN</th>
+                                    <th class="text-left" style="width:100px;">GIỚI TÍNH</th>
+                                    <th class="text-center" style="width:70px;">NGÀY SINH</th>
+                                    <th class="text-left" style="width:150px;">SỐ CMND</th>
+                                    <th class="text-left" style="width:150px;">CHỨC DANH</th>
+                                    <th class="text-left" >TÊN ĐƠN VỊ</th>
+                                    <th class="text-left" style="width:150px;">SỐ TÀI KHOẢN</th>
+                                    <th class="text-left" >TÊN NGÂN HÀNG</th>
+                                    <th class="text-left" >CHI NHÁNH NGÂN HÀNG</th>
+                                    <th class="text-center" style="width:100px;">CHỨC NĂNG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li class="delete__employee">Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" class="checkbox-input"></td>
+                                    <td class="text-left">00012</td>
+                                    <td class="text-left">Thái Bình An</td>
+                                    <td class="text-left">Nam</td>
+                                    <td class="text-center">05/01/2001</td>
+                                    <td class="text-left">033201005816</td>
+                                    <td class="text-left">Nhân Viên</td>
+                                    <td class="text-left" >QTKD</td>
+                                    <td class="text-left">090811402343</td>
+                                    <td class="text-left" >ACB</td>
+                                    <td class="text-left" >PGD Xuân Thủy</td>
+                                    <td class="text-center">
+                                        <div class="list-func">
+                                            <div class="function-text">Sửa</div>
+                                            <div class="function__icon">
+                                            </div>
+                                            <ul class="function__nav">
+                                                <li>Nhân bản</li>
+                                                <li>Xóa</li>
+                                                <li>Ngừng sử dụng</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="paging">
+                        <div class="paging-left">
+                            Tổng số: <b style="color:black">1020</b> bản ghi.
+                        </div>
+                        <div class="paging-center">
+                            <mcombobox api="https://cukcuk.manhnv.net/api/v1/CustomerGroups" text="CustomerGroupName" value="CustomerGroupId" id="cbxGender" type="reverse"></mcombobox>
+
+                            <!-- <select name="" id="" class="select">
+                                <option value="">20 bản ghi trên 1 trang</option>
+                                <option value="">30 bản ghi trên 1 trang</option>
+                                <option value="">40 bản ghi trên 1 trang</option>
+                            </select> -->
+                            
+                            <div class="paging-number">
+                                <div class="paging-number-text">Trước</div>
+                                <button class="page-number-btn">1</button>
+                                <button class="page-number-btn">2</button>
+                                <button class="page-number-btn">3</button>
+                                <div class="paging-number-icon"></div>
+                                <button class="page-number-btn">52</button>
+                                <div class="paging-number-text">Sau</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal">
+            <div class="modal__main">
+                <div class="modal__header">
+                    <div class="modal__header--left">
+                        <div class="modal__header--title">Thông Tin Nhân Viên</div>
+                        <div class="modal__header--checkbox">
+                            <div class="checkbox">
+                                <input type="checkbox" name="check" id="check" class="checkbox-input">
+                                <label class="checkbox-label" for="check">là khách hàng</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="check" id="check-1" class="checkbox-input">
+                                <label class="checkbox-label" for="check-1">là nhà cung cấp</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__header--right">
+                        <div class="modal_header--icon1"></div>
+                        <div class="modal_header--icon2"></div>
+                    </div>
+                </div>
+                <div class="modal__content">
+                    <div class="modal__content--block">
+                        <div class="modal__block--top">
+                            <div class="block__input--left">
+                                <div class="form__input">
+                                    <div class="form__input--item">
+                                        <label for="">Mã <span>*</span></label>
+                                        <input type="text" class="input input-width-180" id="EmployeeCode">
+                                    </div>
+                                    <div class="form__input--item">
+                                        <label for="">Tên <span>*</span></label>
+                                        <input type="text" class="input input-width-300" id="EmployeeName">
+                                    </div>
+                                </div>
+                                <div class="form__input">
+                                    <div class="form__input--item">
+                                        <label for="">Đơn vị <span>*</span></label>
+                                        <!-- <input type="text" class="input input-width-480"> -->
+                                        <mcombobox api="https://cukcuk.manhnv.net/api/v1/CustomerGroups" text="CustomerGroupName" value="CustomerGroupId" id="cbxGender" width="input-width-480"></mcombobox>
+
+                                    </div>
+                                </div>
+                                <div class="form__input">
+                                    <div class="form__input--item">
+                                        <label for="">Chức danh</label>
+                                        <input type="text" class="input input-width-480" id="EmployeeTitle">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block__input--right">
+                                <div class="form__input form__input--start">
+                                    <div class="form__input--item pad-12 form__input--date">
+                                        <label for="">Ngày sinh</label>
+                                        <div class="form__input--date">
+                                            <input type="text" class="input input-width-180 date datepicker" readonly="readonly" placeholder="DD/MM/YYYY" id="EmployeeDateOfBirth">
+                                            <div class="date__icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form__input--item">
+                                        <label for="">Giới tính</label>
+                                        <div class="form__input--radio">
+                                            <div class="radio">
+                                                <input type="radio" name="check" id="radio-1" class="radio-input">
+                                                <label class="radio-label" for="radio-1">Nam</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="check" id="radio-2" class="radio-input">
+                                                <label class="radio-label" for="radio-2">Nữ</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="check" id="radio-3" class="radio-input">
+                                                <label class="radio-label" for="radio-3">Khác</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__input">
+                                    <div class="form__input--item pad-12">
+                                        <label for="">Số CMND</label>
+                                        <input type="text" class="input input-width-300" id="EmployeeCMND">
+                                    </div>
+                                    <div class="form__input--item">
+                                        <label for="">Ngày cấp</label>
+                                        <div class="form__input--date">
+                                            <input type="text" class="input input-width-180 date datepicker" readonly="readonly" placeholder="DD/MM/YYYY" id="EmployeeDateRange">
+                                            <div class="date__icon"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__input">
+                                    <div class="form__input--item">
+                                        <label for="">Nơi cấp</label>
+                                        <input type="text" class="input input-width-480" id="EmployeeLocation">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal__block--bottom">
+
+                            <div class="form__input--bottom">
+
+                                <div class="form__input">
+                                    <div class="form__input--item">
+                                        <label for="">Địa chỉ</label>
+                                        <input type="text" class="input input-width-984" id="EmployeePlace">
+                                    </div>
+                                </div>
+                               <div class="form__input--flexStart">
+                                    <div class="form__input--item pad-12">
+                                        <label for="">ĐT di động</label>
+                                        <input type="text" class="input input-width-200" id="EmployeeSDT">
+                                    </div>
+                                    <div class="form__input--item pad-12">
+                                        <label for="">ĐT cố định</label>
+                                        <input type="text" class="input input-width-200" id="EmployeeSDTPermanent">
+                                    </div>
+                                    <div class="form__input--item pad-12">
+                                        <label for="">Email</label>
+                                        <input type="text" class="input input-width-200" id="EmployeeEmail">
+                                    </div>
+                               </div>
+                                    
+                               <div class="form__input--flexStart">
+                                    <div class="form__input--item pad-12">
+                                        <label for="">Tài khoản ngân hàng</label>
+                                        <input type="text" class="input input-width-200" id="EmployeeBankAccount">
+                                    </div>
+                                    <div class="form__input--item pad-12">
+                                        <label for="">Tên ngân hàng</label>
+                                        <input type="text" class="input input-width-200" id="EmployeeBankName">
+                                    </div>
+                                    <div class="form__input--item pad-12">
+                                        <label for="">Chi nhánh</label>
+                                        <input type="text" class="input input-width-200" id="EmployeeBankBranch">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <div class="modal__footer--left">
+                        <button class="btn-close modal__close">Hủy</button>
+                    </div>
+                    <div class="modal__footer--right">
+                        <button class="btn-close modal--save">Cất</button>
+                        <button class="btn modal--add">Cất và Thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- dialog input -->
+        <div class="dialog">
+            <div class="dialog-content">
+                    <div class="dialog-top">
+                        <div class="dialog-main">
+                            <div class="dialog-icon">
+                                
+                            </div>
+                            <div class="dialog-text">
+                                Bạn có chắc muốn đóng form nhập thông tin
+                                 "thông tin chung của thủ tục 603" hay không? 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dialog-button">
+                        <button class="btn-close dialog__icon--exit">Hủy</button>
+                        <button class="btn dialog-btn dialog__icon--select">Đồng ý</button>
+                    </div>
+            </div>
+        </div>
+
+        <!-- thư viện js -->
+        <script src="../js/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="../lib/combobox/js/combobox.js"></script>
+        <script src="../lib/inputDate/js/date.js"></script>
+
+        <!-- js chung -->
+        <script src="../js/enum.js"></script>
+        <script src="../js/resource.js"></script>
+
+        <!-- js riêng -->
+        <script src="../js/employee.js"></script>
+    </body>
+</html>

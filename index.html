@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleGuidLine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/colors/green.css">
+    <link rel="stylesheet" href="./css/colors/blur.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="./css/colors/red.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./css/colors/green.css" class="alternate-style" title="color-3" disabled>
+</head>
+<body>
+
+    <div class="row">
+        <label for="">14, modal</label>
+        <button class="btn btn-showToast">Show</button>
+
+        <div class="modal">
+            <div class="modal__main">
+                <div class="modal__header">
+                    <div class="modal__header--left">
+                        <div class="modal__header--title">Thông Tin Nhân Viên</div>
+                        <div class="modal__header--checkbox">
+                            <div class="checkbox">
+                                <input type="checkbox" name="check" id="check" class="checkbox-input">
+                                <label class="checkbox-label" for="check">là khách hàng</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="check" id="check-1" class="checkbox-input">
+                                <label class="checkbox-label" for="check-1">là nhà cung cấp</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__header--right">
+                        <div class="modal_header--icon1"></div>
+                        <div class="modal_header--icon2"></div>
+                    </div>
+                </div>
+                <div class="modal__content">
+                    <div class="modal__content--block">
+                        <div class="modal__block--top">
+                            <div class="block__input--left">
+                                <div class="form__input">
+                                    <div class="form__input--item">
+                                        <label for="">Mã <span>*</span></label>
+                                        <input type="text" class="input input-width-180">
+                                    </div>
+                                    <div class="form__input--item">
+                                        <label for="">Tên <span>*</span></label>
+                                        <input type="text" class="input input-width-300">
+                                    </div>
+                                </div>
+                                <div class="form__input">
+                                    <div class="form__input--item">
+                                        <label for="">Đơn vị <span>*</span></label>
+                                        <input type="text" class="input input-width-480">
+                                    </div>
+                                </div>
+                                <div class="form__input">
+                                    <div class="form__input--item">
+                                        <label for="">Chức danh</label>
+                                        <input type="text" class="input input-width-480">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block__input--right">
+                                <div class="form__input form__input--start">
+                                    <div class="form__input--item pad-12">
+                                        <label for="">Ngày sinh</label>
+                                        <input type="date" class="input input-width-180">
+                                    </div>
+                                    <div class="form__input--item">
+                                        <label for="">Giới tính</label>
+                                        <div class="form__input--radio">
+                                            <div class="radio">
+                                                <input type="radio" name="check" id="radio-1" class="radio-input">
+                                                <label class="radio-label" for="radio-1">Nam</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="check" id="radio-2" class="radio-input">
+                                                <label class="radio-label" for="radio-2">Nữ</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="check" id="radio-3" class="radio-input">
+                                                <label class="radio-label" for="radio-3">Khác</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__input">
+                                    <div class="form__input--item pad-12">
+                                        <label for="">Số CMND</label>
+                                        <input type="text" class="input input-width-300">
+                                    </div>
+                                    <div class="form__input--item">
+                                        <label for="">Ngày cấp</label>
+                                        <input type="date" class="input input-width-180">
+                                    </div>
+                                </div>
+                                <div class="form__input">
+                                    <div class="form__input--item">
+                                        <label for="">Nơi cấp</label>
+                                        <input type="text" class="input input-width-480">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal__block--bottom">
+
+                            <div class="form__input--bottom">
+
+                                <div class="form__input">
+                                    <div class="form__input--item">
+                                        <label for="">Địa chỉ</label>
+                                        <input type="text" class="input input-width-984">
+                                    </div>
+                                </div>
+                               <div class="form__input--flexStart">
+                                    <div class="form__input--item pad-12">
+                                        <label for="">ĐT di động</label>
+                                        <input type="text" class="input input-width-200">
+                                    </div>
+                                    <div class="form__input--item pad-12">
+                                        <label for="">ĐT cố định</label>
+                                        <input type="text" class="input input-width-200">
+                                    </div>
+                                    <div class="form__input--item pad-12">
+                                        <label for="">Email</label>
+                                        <input type="text" class="input input-width-200">
+                                    </div>
+                               </div>
+                                    
+                               <div class="form__input--flexStart">
+                                    <div class="form__input--item pad-12">
+                                        <label for="">Tài khoản ngân hàng</label>
+                                        <input type="text" class="input input-width-200">
+                                    </div>
+                                    <div class="form__input--item pad-12">
+                                        <label for="">Tên ngân hàng</label>
+                                        <input type="text" class="input input-width-200">
+                                    </div>
+                                    <div class="form__input--item pad-12">
+                                        <label for="">Chi nhánh</label>
+                                        <input type="text" class="input input-width-200">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <div class="modal__footer--left">
+                        <button class="btn-close">Hủy</button>
+                    </div>
+                    <div class="modal__footer--right">
+                        <button class="btn-close">Cất</button>
+                        <button class="btn">Cất và Thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <label for="">13, toast message</label>
+        <button class="btn btn-showToast">Show</button>
+
+        <div class="toast">
+            <div class="toast-left">
+                <div class="toast-icon-start"></div>
+                <div class="toast-text">Công việc đã thành công!</div>
+            </div>
+            <div class="toast-icon-end"></div>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <label for="">11, table</label>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center" style="width:50px;"><input type="checkbox" checked></th>
+                    <th class="text-left" style="width:150px;">MÃ NHÂN VIÊN</th>
+                    <th class="text-left">TÊN NHÂN VIÊN</th>
+                    <th class="text-left" style="width:100px;">GIỚI TÍNH</th>
+                    <th class="text-center" style="width:70px;">NGÀY SINH</th>
+                    <th class="text-left" style="width:150px;">SỐ CMND</th>
+                    <th class="text-left" style="width:150px;">CHỨC DANH</th>
+                    <th class="text-left" >TÊN ĐƠN VỊ</th>
+                    <th class="text-left" style="width:150px;">SỐ TÀI KHOẢN</th>
+                    <th class="text-left" >TÊN NGÂN HÀNG</th>
+                    <th class="text-left" >CHI NHÁNH NGÂN HÀNG</th>
+                    <th class="text-center" style="width:100px;">CHỨC NĂNG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center"><input type="checkbox" checked></td>
+                    <td class="text-left">00012</td>
+                    <td class="text-left">Thái Bình An</td>
+                    <td class="text-left">Nam</td>
+                    <td class="text-center">05/01/2001</td>
+                    <td class="text-left">033201005816</td>
+                    <td class="text-left">Nhân Viên</td>
+                    <td class="text-left" >QTKD</td>
+                    <td class="text-left">090811402343</td>
+                    <td class="text-left" >ACB</td>
+                    <td class="text-left" >PGD Xuân Thủy</td>
+                    <td class="text-center">Sửa</td>
+                </tr>
+                <tr>
+                    <td class="text-center"><input type="checkbox" checked></td>
+                    <td class="text-left">00012</td>
+                    <td class="text-left">Thái Bình An</td>
+                    <td class="text-left">Nam</td>
+                    <td class="text-center">05/01/2001</td>
+                    <td class="text-left">033201005816</td>
+                    <td class="text-left">Nhân Viên</td>
+                    <td class="text-left" >QTKD</td>
+                    <td class="text-left">090811402343</td>
+                    <td class="text-left" >ACB</td>
+                    <td class="text-left" >PGD Xuân Thủy</td>
+                    <td class="text-center">Sửa</td>
+                </tr>
+                <tr>
+                    <td class="text-center"><input type="checkbox" checked></td>
+                    <td class="text-left">00012</td>
+                    <td class="text-left">Thái Bình An</td>
+                    <td class="text-left">Nam</td>
+                    <td class="text-center">05/01/2001</td>
+                    <td class="text-left">033201005816</td>
+                    <td class="text-left">Nhân Viên</td>
+                    <td class="text-left" >QTKD</td>
+                    <td class="text-left">090811402343</td>
+                    <td class="text-left" >ACB</td>
+                    <td class="text-left" >PGD Xuân Thủy</td>
+                    <td class="text-center">Sửa</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+        <label for="">12,paging</label>
+        <div class="paging">
+            <div class="paging-left">
+                Tổng số: <b style="color:black">1020</b> bản ghi.
+            </div>
+            <div class="paging-center">
+                <select name="" id="" class="select">
+                    <option value="">20 bản ghi trên 1 trang</option>
+                    <option value="">30 bản ghi trên 1 trang</option>
+                    <option value="">40 bản ghi trên 1 trang</option>
+                </select>
+                <div class="paging-number">
+                    <div class="paging-number-text">Trước</div>
+                    <button class="page-number-btn">1</button>
+                    <button class="page-number-btn">2</button>
+                    <button class="page-number-btn">3</button>
+                    <div class="paging-number-icon"></div>
+                    <button class="page-number-btn">52</button>
+                    <div class="paging-number-text">Sau</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <label for="">1,button</label>
+        <button class="btn">Cắt và Thêm</button>
+    </div>
+
+    <div class="row">
+        <label for="">2,button-icon</label>
+        <button class="btn btn-icon">
+            <div class="btn-icon-img">
+                <div class="btn-icon-img-locate">
+                </div>
+            </div>
+            Thêm
+        </button>
+    </div>
+
+    <div class="row">
+        <label for="">3,button-close</label>
+        <button class="btn-close">Đóng</button>
+    </div>
+
+    <div class="row">
+        <label for="">4,input</label>
+        <input type="text" class="input">
+    </div>
+
+    <div class="row">
+        <label for="">5,input-search</label>
+        <div class="input-search">
+            <input type="text" class="input input-search-forcus">
+            <div class="input-icon"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <label for="">6,select</label>
+        <select name="" id="" class="select">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+        </select>
+    </div>
+
+    
+    <div class="row">
+        <label for="">7,checkbox</label>
+        <div class="checkbox">
+            <input type="checkbox" name="check" id="check" class="checkbox-input">
+            <div class="checkbox__checked"></div>
+            <label class="checkbox-label" for="check">checked</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <label for="">8,radio</label>
+        <div class="radio">
+            <input type="radio" name="check" id="radio-1" class="radio-input">
+            <label class="radio-label" for="radio-1">radio</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <label for="">10,dialog</label>
+        <button class="btn btn-showDialog">Show</button>
+
+        <div class="dialog">
+            <div class="dialog-content">
+                    <div class="dialog-top">
+                        <div class="dialog-main">
+                            <div class="dialog-icon">
+                                
+                            </div>
+                            <div class="dialog-text">
+                                Bạn có chắc muốn đóng form nhập thông tin
+                                 "thông tin chung của thủ tục 603" hay không? 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dialog-button">
+                        <button class="btn dialog-btn">Đồng ý</button>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+     var btn=document.getElementsByClassName('btn-showDialog')[0];
+     dialog=document.getElementsByClassName('dialog')[0];
+     dialog_btn=document.getElementsByClassName('dialog-btn')[0];
+     btn.addEventListener('click',function(){
+        dialog.style.display="flex";
+     })
+     dialog_btn.addEventListener('click',function(){
+        dialog.style.display="none";
+     })
+     
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fa "></i>
+        </div>
+        <h4>Màu chủ đề</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        </div>
+    </div>
+
+    <script src="./js/color.js"></script>
+</body>
+</html>
